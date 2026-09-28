@@ -1,0 +1,20 @@
+# CuteFela
+
+CuteFela is a global environmental organisation founded in Sri Lanka. The website covers conservation, environmental learning, wildlife rehabilitation, disaster response, livelihoods, rights and international environmental engagement.
+
+## Key pages
+- /who-we-are.html — organisation overview
+- /work.html — programme overview
+- /school-programs.html — environmental learning
+- /wildlife-rehabilitation.html — rehabilitation project
+- /disaster-response.html — disaster-response framework
+- /species.html — wildlife and ecosystem guide index
+- /global-engagement.html — UN and conference engagement
+- /partner.html — partnerships
+- /contact.html — contact
+
+## Wildlife guides
+The /species/ directory contains 29 static, crawlable guides. Each guide discusses range, habitat, natural history, conservation pressure, practical conservation action and Sri Lanka context where relevant. External specialist sources are linked from each page.
+
+## Contact
+contact@cutefela.com

@@ -1,0 +1,20 @@
+{
+  "name": "CuteFela",
+  "short_name": "CuteFela",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#faf8f2",
+  "theme_color": "#0d1713",
+  "icons": [
+    {
+      "src": "assets/images/brand/apple-touch-icon.png",
+      "sizes": "180x180",
+      "type": "image/png"
+    },
+    {
+      "src": "assets/images/brand/logo-512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}
