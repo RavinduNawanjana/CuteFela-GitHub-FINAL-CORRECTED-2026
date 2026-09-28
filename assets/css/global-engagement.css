@@ -1,0 +1,277 @@
+/* Global engagement — conference participation and accreditation are deliberately distinct. */
+.global-hero {
+  min-height: min(880px, 94svh);
+  isolation: isolate;
+}
+
+.global-hero::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  background:
+    linear-gradient(90deg, rgba(5, 18, 14, .9) 0%, rgba(5, 18, 14, .56) 48%, rgba(5, 18, 14, .14) 78%),
+    linear-gradient(0deg, rgba(5, 18, 14, .72), transparent 52%);
+  pointer-events: none;
+}
+
+.global-hero .page-hero-media img {
+  object-fit: cover;
+  object-position: 56% 48%;
+  transform: scale(1.025);
+}
+
+.global-hero .container {
+  z-index: 1;
+  max-width: 1240px;
+}
+
+.global-hero .page-display {
+  max-width: 930px;
+  font-size: clamp(4.3rem, 8.6vw, 9rem);
+  line-height: .88;
+  letter-spacing: -.06em;
+}
+
+.global-hero p {
+  max-width: 720px;
+  font-size: clamp(1rem, 1.45vw, 1.2rem);
+  color: rgba(255, 255, 255, .82);
+}
+
+.global-hero .eyebrow,
+.conference-copy span,
+.accred-card .tag,
+.source-panel small {
+  font-family: "Outfit", sans-serif;
+  font-weight: 600;
+}
+
+.engagement-facts {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 34px;
+}
+
+.engagement-facts span {
+  display: flex;
+  align-items: baseline;
+  gap: 8px;
+  padding: 10px 14px;
+  border: 1px solid rgba(255, 255, 255, .24);
+  border-radius: 999px;
+  background: rgba(8, 24, 19, .28);
+  color: rgba(255, 255, 255, .78);
+  font-family: "Outfit", sans-serif;
+  font-size: .76rem;
+  letter-spacing: .06em;
+  text-transform: uppercase;
+  backdrop-filter: blur(10px);
+}
+
+.engagement-facts strong {
+  color: #fff;
+  font-size: 1rem;
+  letter-spacing: -.02em;
+}
+
+.timeline-wrap {
+  overflow: visible;
+}
+
+.conference-track {
+  display: grid;
+  grid-template-columns: repeat(12, minmax(0, 1fr));
+  grid-auto-flow: dense;
+  gap: 18px;
+  width: auto;
+  padding: 4px 0 30px;
+}
+
+.conference-card {
+  width: auto;
+  height: auto;
+  min-height: 510px;
+  grid-column: span 6;
+  border-radius: 30px;
+  box-shadow: 0 16px 46px rgba(17, 36, 28, .12);
+  transform-style: preserve-3d;
+  contain: paint;
+}
+
+.conference-card:nth-child(1),
+.conference-card:nth-child(4) {
+  grid-column: span 7;
+}
+
+.conference-card:nth-child(2),
+.conference-card:nth-child(3) {
+  grid-column: span 5;
+}
+
+.conference-card:nth-child(5) {
+  grid-column: span 5;
+  min-height: 590px;
+}
+
+.conference-card:nth-child(6) {
+  grid-column: span 7;
+  min-height: 590px;
+}
+
+.conference-card img,
+.conference-card-contained img {
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  background: transparent;
+  object-fit: cover;
+  transform: scale(1.035);
+  transition: transform .9s cubic-bezier(.2, .7, .2, 1), filter .7s ease;
+}
+
+.conference-card:nth-child(3) img { object-position: 48% center; }
+.conference-card:nth-child(5) img { object-position: 50% 60%; }
+.conference-card:nth-child(6) img { object-position: 50% 48%; }
+
+.conference-card::after,
+.conference-card-contained::after {
+  background:
+    linear-gradient(0deg, rgba(4, 14, 10, .92) 0%, rgba(4, 14, 10, .46) 38%, transparent 73%),
+    linear-gradient(110deg, rgba(4, 14, 10, .2), transparent 58%);
+}
+
+.conference-card::before {
+  content: "";
+  position: absolute;
+  inset: 12px;
+  z-index: 2;
+  border: 1px solid rgba(255, 255, 255, .18);
+  border-radius: 21px;
+  opacity: 0;
+  transition: opacity .35s ease;
+  pointer-events: none;
+}
+
+.conference-card:hover::before,
+.conference-card:focus-within::before { opacity: 1; }
+.conference-card:hover img { transform: scale(1.085); filter: saturate(1.06) contrast(1.02); }
+
+.conference-copy {
+  left: clamp(22px, 3vw, 40px);
+  right: clamp(22px, 3vw, 40px);
+  bottom: clamp(24px, 3vw, 38px);
+}
+
+.conference-copy h3 {
+  max-width: 770px;
+  font-size: clamp(2.4rem, 4.1vw, 4.75rem);
+  line-height: .94;
+  letter-spacing: -.045em;
+}
+
+.conference-card:nth-child(5) .conference-copy h3 {
+  font-size: clamp(2.2rem, 3.25vw, 3.7rem);
+}
+
+.conference-copy p {
+  max-width: 620px;
+  font-size: .95rem;
+  line-height: 1.55;
+}
+
+.dark .accred-layout {
+  align-items: start;
+}
+
+.dark .accred-copy {
+  top: 120px;
+}
+
+.accred-copy h2 {
+  max-width: 650px;
+  letter-spacing: -.05em;
+}
+
+.accred-card {
+  position: relative;
+  overflow: hidden;
+  border-color: rgba(255, 255, 255, .14);
+  background: linear-gradient(135deg, rgba(255, 255, 255, .095), rgba(255, 255, 255, .025));
+  box-shadow: inset 0 1px rgba(255, 255, 255, .08);
+}
+
+.accred-card::after {
+  content: "";
+  position: absolute;
+  width: 170px;
+  height: 170px;
+  right: -80px;
+  bottom: -100px;
+  border-radius: 50%;
+  background: rgba(232, 178, 63, .14);
+  filter: blur(4px);
+}
+
+.accred-card h3 { font-family: "Fraunces", serif; }
+.accred-card .num { color: rgba(255, 255, 255, .22); }
+
+.split-section .visual {
+  overflow: hidden;
+  border-radius: 30px;
+  box-shadow: 0 22px 60px rgba(17, 36, 28, .14);
+}
+
+.split-section .visual img {
+  object-fit: cover;
+  object-position: center 52%;
+}
+
+.source-panel {
+  padding: clamp(28px, 5vw, 64px);
+  border-radius: 32px;
+  background:
+    radial-gradient(circle at 86% 10%, rgba(232, 178, 63, .16), transparent 34%),
+    var(--forest2);
+}
+
+.source-panel a {
+  transition: padding .25s ease, border-color .25s ease, color .25s ease;
+}
+
+.source-panel a:hover,
+.source-panel a:focus-visible {
+  padding-left: 9px;
+  border-color: var(--amber);
+  color: var(--amber);
+}
+
+@media (max-width: 980px) {
+  .global-hero .page-display { font-size: clamp(4rem, 12vw, 7.2rem); }
+  .conference-card:nth-child(n) { grid-column: span 6; min-height: 510px; }
+  .conference-card:nth-child(5) .conference-copy h3 { font-size: clamp(2.35rem, 5vw, 3.7rem); }
+}
+
+@media (max-width: 700px) {
+  .global-hero { min-height: 88svh; }
+  .global-hero::after {
+    background: linear-gradient(0deg, rgba(5, 18, 14, .92) 0%, rgba(5, 18, 14, .48) 72%, rgba(5, 18, 14, .22));
+  }
+  .global-hero .page-hero-media img { object-position: 62% center; }
+  .global-hero .page-display { font-size: clamp(3.45rem, 15vw, 5.3rem); }
+  .engagement-facts { gap: 7px; margin-top: 24px; }
+  .engagement-facts span { padding: 8px 10px; font-size: .66rem; }
+  .conference-track { grid-template-columns: 1fr; gap: 14px; }
+  .conference-card:nth-child(n) { grid-column: auto; min-height: 470px; border-radius: 23px; }
+  .conference-card:nth-child(5) { min-height: 540px; }
+  .conference-copy h3,
+  .conference-card:nth-child(5) .conference-copy h3 { font-size: clamp(2.25rem, 11vw, 3.15rem); }
+  .conference-copy p { font-size: .88rem; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .conference-card,
+  .conference-card img,
+  .source-panel a { transition: none; transform: none !important; }
+}

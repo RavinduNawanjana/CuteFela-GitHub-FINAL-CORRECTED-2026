@@ -99,3 +99,4 @@
 @media(max-width:980px){.sdg-explorer-layout{grid-template-columns:1fr}.sdg-explorer .sdg-goal-grid{grid-template-columns:repeat(6,minmax(0,1fr))}.sdg-goal-button:nth-child(16){grid-column:auto}.sdg-target-stage{min-height:0}}
 @media(max-width:640px){.sdg-explorer .sdg-goal-grid{grid-template-columns:repeat(4,minmax(0,1fr));gap:8px}.sdg-goal-button:nth-child(17){grid-column:2/span 2;width:calc(50% - 4px);justify-self:center}.sdg-target-stage{padding:18px;border-radius:18px;min-height:300px}.sdg-goal-button:hover{transform:none}.sdg-target-meta h4{font-size:2.2rem}}
 @media(prefers-reduced-motion:reduce){.sdg-goal-button{transition:none}.sdg-goal-button:hover,.sdg-goal-button[aria-pressed=true]{transform:none}}
+.accred-copy>.eyebrow,.accred-card .tag{font-family:"Outfit",sans-serif;font-weight:600}

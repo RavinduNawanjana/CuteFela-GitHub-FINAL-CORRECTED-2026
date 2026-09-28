@@ -16,6 +16,7 @@ The global and species media library in this build was supplied in the user's up
 
 ## Conference photography
 UNFCCC COP28, COP29, UNCCD COP16, UNFCCC COP30, Second World Summit for Social Development Doha 2025, and UNCCD COP17 Ulaanbaatar 2026 photographs were supplied for this build.
+The additional Second World Summit stage photograph and UNCCD COP17 rainbow venue photograph were supplied by the user for the September 2026 Global Engagement redesign and are each used once on the page.
 
 ## Code libraries loaded from CDNs
 - GSAP + ScrollTrigger
