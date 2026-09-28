@@ -8,6 +8,7 @@ The website uses cropped photographic material extracted from the supplied Wildl
 
 ## SDG media
 The SDG target media cards included in the supplied SDG archive are used selectively in the Global Goals section. United Nations Sustainable Development Goals marks remain subject to UN usage guidance.
+The 17 goal icons were supplied by the user as E-WEB-Goal-01 through E-WEB-Goal-17 and resized for the web. The icon gallery shows the full framework; the target cards below it identify the connections described on this site.
 
 ## Global wildlife and nature media
 The global and species media library in this build was supplied in the user's uploaded archive sets. File names are preserved only in the working source library; public website filenames are normalised. Where those archive assets were originally sourced from Pexels, Pixabay, Wikimedia Commons or another provider, the underlying licence and creator attribution should be retained in the organisation's source records. The public design intentionally does not place photographer-name badges over imagery when attribution is not required on-image.

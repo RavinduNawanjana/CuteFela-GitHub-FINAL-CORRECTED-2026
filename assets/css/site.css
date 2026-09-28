@@ -56,3 +56,18 @@
 .disaster-hero .page-hero-media video{object-position:center center}.disaster-story .section-intro{margin-bottom:42px}.disaster-photo-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px}.disaster-media{margin:0;position:relative;overflow:hidden;border-radius:24px;background:#d8ded8;min-height:360px}.disaster-media.wide{grid-column:span 2}.disaster-media img{width:100%;height:100%;min-height:360px;object-fit:cover}.disaster-media figcaption{position:absolute;z-index:2;left:16px;right:16px;bottom:14px;padding:12px 14px;border-radius:14px;background:rgba(7,18,13,.78);backdrop-filter:blur(10px);color:white;font-size:.8rem;line-height:1.45}.disaster-video-frame{min-height:500px}.disaster-video-frame video{width:100%;height:100%;object-fit:cover}.recovery-grid{margin-top:18px}.resilience-grid .disaster-media{min-height:330px}.resilience-grid .disaster-media img{min-height:330px}.disaster-video-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px;margin-top:18px}.disaster-video-card{margin:0;border-radius:24px;overflow:hidden;background:#102119;border:1px solid rgba(255,255,255,.12)}.disaster-video-card video{width:100%;aspect-ratio:16/10;object-fit:cover}.disaster-video-card figcaption{padding:12px 15px;color:rgba(255,255,255,.76);font-size:.8rem}.disaster-closing{max-width:900px}.disaster-closing .copy{max-width:820px}.disaster-closing .copy h2{font-size:clamp(3rem,5vw,5.6rem)}
 @media(max-width:980px){.sdg-intro-grid{grid-template-columns:1fr}.sdg-wheel-frame{min-height:0}.sdg-section .sdg-cards{grid-template-columns:repeat(2,minmax(0,1fr))}.conference-track{grid-template-columns:1fr}.conference-card{height:540px}.disaster-photo-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.disaster-media.wide{grid-column:span 2}.disaster-video-grid{grid-template-columns:1fr 1fr}}
 @media(max-width:640px){.sdg-section .sdg-cards{display:grid;grid-template-columns:1fr;overflow:visible}.sdg-section .sdg-card{min-width:0}.sdg-wheel-frame img{width:min(82vw,430px)}.conference-card{height:480px}.conference-card-contained img{padding:10px}.school-hero .page-display{font-size:clamp(2.9rem,13vw,4.8rem)}.disaster-photo-grid{grid-template-columns:1fr}.disaster-media.wide{grid-column:auto}.disaster-media,.disaster-media img{min-height:310px}.disaster-video-grid{grid-template-columns:1fr}.disaster-video-frame{min-height:360px}}
+
+/* Full SDG icon gallery precedes the more detailed target cards. */
+.sdg-goals{margin-bottom:clamp(52px,7vw,90px)}
+.sdg-gallery-intro{display:flex;justify-content:space-between;align-items:end;gap:24px;margin-bottom:24px}
+.sdg-gallery-intro h3{font-size:clamp(2rem,3vw,3.2rem)}
+.sdg-gallery-intro p{max-width:420px;margin:0;color:rgba(255,255,255,.78)}
+.sdg-goal-grid{list-style:none;display:grid;grid-template-columns:repeat(9,minmax(0,1fr));gap:clamp(8px,1vw,14px);padding:0;margin:0}
+.sdg-goal{min-width:0;aspect-ratio:1;margin:0;overflow:hidden;background:rgba(255,255,255,.1);box-shadow:0 10px 30px rgba(4,22,21,.12)}
+.sdg-goal:nth-child(10){grid-column:2}
+.sdg-goal img{display:block;width:100%;height:100%;object-fit:cover;transition:transform .35s ease}
+.sdg-goal:hover img{transform:scale(1.045)}
+.sdg-target-intro{margin-bottom:24px}
+@media(max-width:980px){.sdg-goal-grid{grid-template-columns:repeat(6,minmax(0,1fr))}.sdg-goal:nth-child(10){grid-column:auto}}
+@media(max-width:640px){.sdg-goal-grid{grid-template-columns:repeat(3,minmax(0,1fr));gap:8px}.sdg-gallery-intro{display:block}.sdg-gallery-intro p{margin-top:10px}.sdg-goals{margin-bottom:54px}}
+@media(prefers-reduced-motion:reduce){.sdg-goal img{transition:none}}
