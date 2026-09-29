@@ -1,0 +1,121 @@
+.who-thinking-grid {
+  align-items: stretch;
+  gap: 18px;
+}
+
+.who-thinking-card {
+  min-width: 0;
+  min-height: 540px;
+  padding: 0;
+  display: grid;
+  grid-template-rows: minmax(0, 1.12fr) minmax(220px, 0.88fr);
+  overflow: hidden;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 22px;
+  background: rgba(255, 255, 255, 0.055);
+}
+
+.who-thinking-image {
+  position: relative;
+  min-height: 300px;
+  overflow: hidden;
+}
+
+.who-thinking-image::after {
+  content: "";
+  position: absolute;
+  inset: 50% 0 0;
+  background: linear-gradient(transparent, rgba(9, 23, 17, 0.72));
+  pointer-events: none;
+}
+
+.who-thinking-image img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+  transition: transform 850ms cubic-bezier(0.2, 0.7, 0, 1);
+}
+
+.who-thinking-card:nth-child(1) .who-thinking-image img {
+  object-position: center 44%;
+}
+
+.who-thinking-card:nth-child(2) .who-thinking-image img {
+  object-position: center 56%;
+}
+
+.who-thinking-card:nth-child(3) .who-thinking-image img {
+  object-position: center 42%;
+}
+
+.who-thinking-card:hover .who-thinking-image img {
+  transform: scale(1.04);
+}
+
+.who-thinking-image .index {
+  position: absolute;
+  z-index: 1;
+  top: 22px;
+  left: 22px;
+  width: 42px;
+  height: 42px;
+  display: grid;
+  place-items: center;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  border-radius: 50%;
+  background: rgba(9, 23, 17, 0.35);
+  color: #fff;
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  backdrop-filter: blur(8px);
+}
+
+.who-thinking-copy {
+  padding: 30px clamp(24px, 3vw, 38px) 36px;
+}
+
+.who-thinking-copy h3 {
+  margin: 0 0 14px;
+  color: #fff;
+  font-size: clamp(1.55rem, 2.2vw, 2.2rem);
+}
+
+.who-thinking-copy p {
+  margin: 0;
+  color: rgba(255, 255, 255, 0.68);
+  line-height: 1.65;
+}
+
+@media (max-width: 980px) {
+  .who-thinking-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .who-thinking-card:last-child {
+    grid-column: 1 / -1;
+    grid-template-columns: minmax(0, 1.1fr) minmax(300px, 0.9fr);
+    grid-template-rows: 420px;
+  }
+}
+
+@media (max-width: 680px) {
+  .who-thinking-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .who-thinking-card,
+  .who-thinking-card:last-child {
+    min-height: 510px;
+    grid-column: auto;
+    grid-template-columns: 1fr;
+    grid-template-rows: minmax(290px, 1.08fr) minmax(210px, 0.92fr);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .who-thinking-image img {
+    transition: none;
+  }
+}
