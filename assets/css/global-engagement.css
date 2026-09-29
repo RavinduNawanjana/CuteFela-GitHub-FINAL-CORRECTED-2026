@@ -144,9 +144,12 @@
 .conference-card:nth-child(5) img {
   object-position: 50% 60%;
 }
-.conference-card:nth-child(6) img,
-.conference-card.cop17-card img {
-  object-position: 34% 48%;
+.conference-card:nth-child(6) img {
+  object-position: 50% 48%;
+}
+
+.cop17-sign-visual img {
+  object-position: 31% 52%;
 }
 
 .conference-card::after,
