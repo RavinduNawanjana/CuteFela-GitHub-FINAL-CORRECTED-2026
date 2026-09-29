@@ -30,3 +30,8 @@ The site keeps core content in static HTML so it remains readable and indexable 
 
 ## Disaster Response media
 The Disaster Response page uses only local natural photography and local video files. The emergency response footage, environmental restoration media and CuteFela supplied community learning photographs are stored inside the repository. The page uses ten distinct still images and five distinct videos, with no remote image or video dependency. Environmental and workshop media is used as preparedness, recovery or resilience context and is not presented as evidence of a specific CuteFela disaster deployment.
+
+## September 2026 programme and species refresh
+The September 2026 refresh uses user-supplied programme, school, partnership, disaster-response, wildlife-centre, homepage and species media. The latest youth-learning batch includes eight documentary photographs and one school-session video, presented together on the School Programs page. Supplied images were resized to WebP and videos were prepared as web-compatible MP4 files without changing their documentary meaning.
+
+Editorial photographs and videos are assigned to one website location only. Brand marks and school crests are treated as identity assets rather than editorial media and may recur where navigation or identification requires them.

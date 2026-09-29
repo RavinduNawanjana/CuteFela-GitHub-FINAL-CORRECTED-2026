@@ -1,0 +1,94 @@
+.youth-lab {
+  overflow: clip;
+  background: #0c1712;
+  color: #f5f1e7;
+}
+
+.youth-lab .section-intro { align-items: end; }
+.youth-lab .section-intro > p { color: rgba(245, 241, 231, .7); }
+
+.youth-lab-grid {
+  display: grid;
+  grid-template-columns: repeat(12, minmax(0, 1fr));
+  grid-auto-rows: 180px;
+  gap: 14px;
+}
+
+.youth-lab-card {
+  position: relative;
+  overflow: hidden;
+  min-height: 0;
+  margin: 0;
+  border-radius: 24px;
+  background: #17241d;
+  isolation: isolate;
+}
+
+.youth-lab-card:nth-child(1) { grid-column: span 5; grid-row: span 2; }
+.youth-lab-card:nth-child(2) { grid-column: span 4; grid-row: span 3; }
+.youth-lab-card:nth-child(3) { grid-column: span 3; grid-row: span 2; }
+.youth-lab-card:nth-child(4) { grid-column: span 5; grid-row: span 2; }
+.youth-lab-card:nth-child(5) { grid-column: span 3; grid-row: span 3; }
+.youth-lab-card:nth-child(6) { grid-column: span 4; grid-row: span 2; }
+.youth-lab-card:nth-child(7) { grid-column: span 5; grid-row: span 2; }
+.youth-lab-card:nth-child(8) { grid-column: span 4; grid-row: span 2; }
+.youth-lab-card:nth-child(9) { grid-column: span 3; grid-row: span 2; }
+
+.youth-lab-card img,
+.youth-lab-card video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transform: scale(1.035);
+  transition: transform .75s cubic-bezier(.2, .7, .2, 1);
+}
+
+.youth-lab-card:hover img,
+.youth-lab-card:hover video { transform: scale(1.085); }
+
+.youth-lab-card::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  background: linear-gradient(0deg, rgba(5, 12, 9, .8), rgba(5, 12, 9, .08) 58%, transparent 78%);
+  pointer-events: none;
+}
+
+.youth-lab-card figcaption {
+  position: absolute;
+  z-index: 2;
+  right: 18px;
+  bottom: 17px;
+  left: 18px;
+  color: #fff;
+  font-family: var(--sans);
+  font-size: .76rem;
+  font-weight: 600;
+  letter-spacing: .08em;
+  line-height: 1.3;
+  text-transform: uppercase;
+}
+
+@media (max-width: 980px) {
+  .youth-lab-grid { grid-auto-rows: 155px; }
+  .youth-lab-card:nth-child(n) { grid-column: span 6; grid-row: span 2; }
+  .youth-lab-card:nth-child(2),
+  .youth-lab-card:nth-child(5),
+  .youth-lab-card:nth-child(9) { grid-row: span 3; }
+}
+
+@media (max-width: 640px) {
+  .youth-lab-grid {
+    grid-template-columns: 1fr;
+    grid-auto-rows: 340px;
+    gap: 10px;
+  }
+  .youth-lab-card:nth-child(n) { grid-column: auto; grid-row: auto; }
+  .youth-lab-card { border-radius: 20px; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .youth-lab-card img,
+  .youth-lab-card video { transform: none !important; transition: none; }
+}
