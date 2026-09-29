@@ -148,6 +148,7 @@
   object-position: 50% 48%;
 }
 
+/* Preserve the full COP17 sign within the landscape crop. */
 .split-section .visual.cop17-sign-visual img {
   object-position: 31% 52%;
 }
